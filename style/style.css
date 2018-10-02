@@ -4,7 +4,8 @@
   hyphens: auto;
   text-align: center;
   /* background-color: #353d42; */
-  background: linear-gradient(135deg, #353d42, #2b2e33 60%, #353d42);
+  /* background: linear-gradient(135deg, #353d42, #2b2e33 60%, #353d42); */
+  background-image: url("../media/images/background.jpg")
 }
 
 ::selection {
