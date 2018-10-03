@@ -1,11 +1,19 @@
 /* Author: Nathan Adams */
+
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Della+Respira');
+
+/* ==== Overall Document ==== */
 :root {
-  color: #b3b6aa;
+  color: #e8ffda;
   hyphens: auto;
   text-align: center;
-  /* background-color: #353d42; */
-  /* background: linear-gradient(135deg, #353d42, #2b2e33 60%, #353d42); */
-  background-image: url("../media/images/background.jpg")
+  background-color: #353d42;
+  background-image: url("../media/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  font-family: 'Della Respira';
+  height: 100vh;
 }
 
 ::selection {
@@ -17,4 +25,59 @@
 ::-moz-selection {
   color: #dbdbdb;
   background-color: #486b63;
+}
+
+/* ==== Sections ==== */
+div {
+  /* border: solid 2px #085f77; */
+  display: inline-block;
+  margin: auto;
+  max-width: 70%;
+  height: auto;
+  justify-content: center;
+}
+
+div.centerMe {
+  float: left;
+  overflow: auto;
+}
+
+div.centerMe h1 {
+  margin-left: 1em;
+  position: absolute;
+  top: 40%;
+  bottom: 60%;
+}
+
+div.centerMe a {
+  margin-left: 2em;
+  position: absolute;
+  top: 55%;
+  bottom: 45%;
+}
+
+p.display {
+  font-family: 'Anonymous Pro';
+  color: #c57676;
+}
+
+a.button-like {
+  display: block;
+  /* width: 2em; */
+  width: auto;
+  height: 1em;
+  border: #085f77 solid 3px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+}
+
+a:link {
+  color: #f31d0d;
+}
+
+a:visited {
+  color: white;
 }
