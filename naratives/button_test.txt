@@ -1,0 +1,1 @@
+<button onclick="location.href='../journey/melee.html';"> go to warrior page </button>
