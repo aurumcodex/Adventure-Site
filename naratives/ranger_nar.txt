@@ -1,0 +1,54 @@
+<p id="init">
+    you leave your abode to go on an adventure. <br>
+    you enter the forest looking for some action since you are bored. <br>
+    <!-- <br><br><br><br><br><br><br><br><br><br><br> -->
+</p>
+
+<span id="init_menu">
+    <button id="charge_in"> charge headfirst </button>
+    <button id="hone_sense"> hone senses </button>
+</span>
+
+<p id="charge">
+    you decide to charge headfirst into the forest. <br>
+    a few minutes after entering and taking a pathway, <br>
+    you hear what sounded like an animal's cry for help. <br>
+    knowing that it <i>could</i> be a trap, you weigh your decisions.
+    <!-- <br><br><br><br><br><br><br><br><br><br><br> -->
+</p>
+
+<span id="charge_menu">
+    <button id="noise_ignore"> ignore it </button>
+    <button id="noise_investigate"> investigate it </button>
+</span>
+
+<p id="resume_chrg_path">
+    uncertain of the risks, you decided to ignore the cry and carry on with your romp through the forest. <br>
+    
+    after some time through your walk, you discover a campsite with a dwindling campfire. <br>
+    you are still some yards away from it, however, and you wonder if it's safe to approach it.
+    <!-- <br><br><br><br> -->
+</p>
+
+<span id="resume_chrg_path_menu">
+    <button id="chrg_avoid"> avoid campsite </button>
+    <button id="chrg_apprch"> approach campsite </button>
+</span>
+
+<p id="chrg_cmpfr_avoid">
+    the decision to avoid the campsite was made. <br>
+    you then find an alternate route around the campsite.
+</p>
+
+<span id="chrg_cmpfr_avoid_menu">
+    <button id="chrg_continue"> continue &gt;&gt; </button>
+</span>
+
+<p id="chrg_cmpfr_apprch">
+    the decision to avoid the campsite was made. <br>
+    you then find an alternate route around the campsite.
+</p>
+
+<span id="chrg_cmpfr_apprch_menu">
+    <button id="chrg_continue"> continue &gt;&gt; </button>
+</span>

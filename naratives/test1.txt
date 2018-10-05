@@ -1,1 +1,6 @@
 prolly oughta add some text here, eh?
+
+<p id="test_line"> this is a test line; it should've loaded </p>
+<button id="test_click"> test extra button function </button>
+
+<p id="test_extra"> extra button chainload success </p>
