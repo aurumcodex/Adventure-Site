@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Della+Respira');
 
 /* ==== Overall Document ==== */
+span.class_desc { 
+  display: none;
+  width: 100%;
+}
+/* p#class { height: 3vh; } */
+div#class_desc {height: 10vh;}
+
 :root {
   color: #e8ffda;
   hyphens: auto;
@@ -60,6 +67,7 @@ div.title_div h1 {
   top: 45vh;
   bottom: 60%;
   width: 90%;
+  font-size: 5vh;
 }
 
 div.title_div button {
@@ -138,7 +146,7 @@ div.centering div.choice_box {
 div.centering p.choice_stater {
   margin-top: 1ex;
   margin-bottom: 1ex;
-  font-size: 1vw;
+  font-size: 1.8vh;
 }
 
 div.class_select {
@@ -172,10 +180,12 @@ button {
   background-color: #242627;
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
+  color: #c2c2c2;
 }
 
 button:hover {
   padding: 0.5em;
+  color: #dbdbdb;
   background-color: #44484b;
 }
 
@@ -183,6 +193,7 @@ button:disabled {
   /* cursor: not-allowed; */
   opacity: 0.75;
   padding: 0.6ex;
+  color: #7c7a7a;
 }
 
 span.button_menu button { width: 12em; }

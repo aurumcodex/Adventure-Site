@@ -1,7 +1,7 @@
+<!-- initial load -->
 <p id="init">
     you leave your abode to go on an adventure. <br>
     you enter the forest looking for some action since you are bored. <br>
-    <!-- <br><br><br><br><br><br><br><br><br><br><br> -->
 </p>
 
 <span id="init_menu">
@@ -9,12 +9,12 @@
     <button id="hone_sense"> hone senses </button>
 </span>
 
+<!-- charge path taken -->
 <p id="charge">
     you decide to charge headfirst into the forest. <br>
     a few minutes after entering and taking a pathway, <br>
     you hear what sounded like an animal's cry for help. <br>
     knowing that it <i>could</i> be a trap, you weigh your decisions.
-    <!-- <br><br><br><br><br><br><br><br><br><br><br> -->
 </p>
 
 <span id="charge_menu">
@@ -27,7 +27,6 @@
     
     after some time through your walk, you discover a campsite with a dwindling campfire. <br>
     you are still some yards away from it, however, and you wonder if it's safe to approach it.
-    <!-- <br><br><br><br> -->
 </p>
 
 <span id="resume_chrg_path_menu">
@@ -40,15 +39,181 @@
     you then find an alternate route around the campsite.
 </p>
 
-<span id="chrg_cmpfr_avoid_menu">
+<p id="chrg_cmpfr_apprch">
+    the decision to approach the campsite was made. <br>
+    you then continue along the path you were walking. <br> <br>
+    upon you arrival, you spot that the inhabitants are injured in some form. <br>
+    you query who seems to be the leader of the group about what caused the injuries. <br>
+
+</p>
+
+<span id="chrg_cmpfr_menu">
     <button id="chrg_continue"> continue &gt;&gt; </button>
 </span>
 
-<p id="chrg_cmpfr_apprch">
-    the decision to avoid the campsite was made. <br>
-    you then find an alternate route around the campsite.
+<p id="investigation">
+    the noise has piqued your interest, and you decide to go in its general direction. <br>
+    you arrive at a small clearing where you hear the same cry-like noise.
+    however, it sounds slightly different than it did earlier in the trail.
 </p>
 
-<span id="chrg_cmpfr_apprch_menu">
-    <button id="chrg_continue"> continue &gt;&gt; </button>
+<span id="investigation_menu">
+    <button id="leave_alone"> leave it alone </button>
+    <button id="check_further"> check further in </button>
+</span>
+
+<p id="check_noise">
+    on checking the noise, you notice at the very lsst possible second a small 
+    gremlin fire a toxic dart into your neck. <br>
+    you are unable to react in time to the threat, and the dart gets lodged into
+    your neck, with a force great enough to puncture a vein. <br>
+    you collapse, writhing in agony, as the poison seeps into your body, slowly killing you.
+</p>
+
+<span id="check_noise_menu">
+    <button id="poisoned"> continue &gt;&gt; </button>
+</span>
+
+<!-- sense path taken -->
+<p id="sense">
+    taking a deep breath, you decide to focus your senses
+    to expect any dangers that might arise within the forest. <br><br>
+    after your brief moment of calming meditation to hone your senses, you enter the forest, 
+    and not too far in, you come to a fork that splits three ways.
+</p>
+
+<span id="sense_menu_nrml">
+    <button id="nrml_left_path_bttn"> take left path </button>
+    <button id="nrml_midl_path_bttn"> take middle path </button>
+    <button id="nrml_rght_path_bttn"> take right path </button>
+</span>
+
+<span id="sense_menu_left_dsbl">
+    <button id="lfds_left_path_bttn" disabled> take left path </button>
+    <button id="lfds_midl_path_bttn"> take middle path </button>
+    <button id="lfds_rght_path_bttn"> take right path </button>
+</span>
+
+<span id="sense_menu_rght_dsbl">
+    <button id="rtds_left_path_bttn"> take left path </button>
+    <button id="rtds_midl_path_bttn"> take middle path </button>
+    <button id="rtds_rght_path_bttn" disabled> take right path </button>
+</span>
+
+<p id="left_path">
+    with the left path looking enticing to your senses, you decide to go down that path.
+    you happen to find some food that had been left over for some reason, 
+    and it looks recently dropped, too.
+    you decide to collect it.
+</p>
+
+<p id="left_have_bait">
+    you return to where you found the bait, but find no more bait.
+</p>
+
+<span id="left_path_menu">
+    <button id="left_return_bttn"> return to fork </button>
+</span>
+
+<p id="left_return">
+    you return from the left side
+</p>
+
+<p id="rght_path">
+    staring off into space for a short while contemplating your options on which path to take,
+    you decide to meander down the right pathway. <br><br>
+    coming to a dead end, you happen to spot a treasure chest in a clearing, looking rather old and abandoned. <br>
+    you think about whether or not to open it.
+</p>
+
+<span id="rght_path_menu">
+    <button id="take_trsr_bttn"> take treasure </button>
+    <button id="leave_trsr_bttn"> leave treasure </button>
+</span>
+
+<p id="take_trsr">
+    throwing caution to the wind, you take a swift jab at the rusted lock on the chest, breaking it. <br>
+    upon opening he chest, which makes an obnoxiously loud creaking noise, you peer into the depths of the chest. <br><br>
+    you obtained a few decently sized (albiet small) gems that are of some value.
+</p>
+
+<p id="leave_it">
+    uncertain if the chest is a trap or not, you decide to leave the chest unopened, and depart from it.
+</p>
+
+<p id="trsr_taken">
+    you came back to the chest that you opened, but it remains empty.
+</p>
+
+<p id="rght_return">
+    you return from the right side
+</p>
+
+<span id="rght_return_menu">
+    <button id="rght_return_bttn"> return to fork </button>
+</span>
+
+<span id="rght_return_no_trsr_menu">
+    <button id="rght_return_no_trsr_bttn"> return to fork </button>
+</span>
+
+<p id="midl_path">
+    you deided to follow the middle path down. <br>
+    out of the corner of your eye, however, you spot a glint from deeper in the forest. <br>
+    unsure of what it is, you question what it is.
+</p>
+
+<span id="midl_path_menu">
+    <button id="glint_ignore"> ignore glint </button>
+    <button id="glint_crouch"> crouch down </button>
+</span>
+
+<p id="ignored">
+    assuming that the glint was merely nothing, you decide to ignore the glint. <br>
+    however, it was the shiny part of an arrowhead heading right at you at a high velocity. <br>
+    one lodges itself into your leg, right above your knee, while many more suddenly appear and 
+    turn you into a pincushion full of arrows.
+</p>
+
+<span id="ignored_menu">
+    <button id="arrow_continue"> continue &gt;&gt; </button>
+</span>
+
+<p id="crouched">
+    unsure of what the glint was, you crouch deftly, as only a ranger/hunter could. <br>
+    all of a sudden, dozens of arrows go wizzing by your head as you are crouched down. <br>
+    you wait for a few moments before you stand back up, breathing a sigh of relief when the barage is over.
+</p>
+
+<span id="crouched_menu">
+    <button id="crouch_continue"> continue down path </button>
+</span>
+
+<p id="midl_cont">
+    after the arrow bargae from nowhere ends, you continue down the path you were on, 
+    and after some time, you spot a campfire down the path. you have no way of knowing that is could be a trap, 
+    or if it could be completely harmless to go visit.
+</p>
+
+<span id="midl_cont_menu">
+    <button id="snse_avoid"> avoid campsite </button>
+    <button id="snse_apprch"> approach campsite </button>
+</span>
+
+<p id="snse_camp_alt">
+    uncertain of the possible risks that might await you within the campsite, 
+    you decide to find an alternate route around the campsite, thus avoiding it completely.
+</p>
+
+<p id="snse_camp_apprch">
+    after weighing your options, you decide to head towards the camp, if only for a moment of repreive after 
+    being nearly killed by a barrage fo arrows. <br>
+    you enter the campsite, and upon arrival, you see that the inhabitants of said camp are in 
+    pretty bad shape. you tend to their wounds as best as you can using what little supplies they have available.
+    afterwards, you approach someone who seems to be their leader. <br>
+    they tell you what happened was because of the monster you are also hunting. a tip is given to you (tip goes here).
+</p>
+
+<span id="snse_camp_continue_menu">
+    <button id="snse_camp_continue"> continue &gt;&gt; </button>
 </span>
