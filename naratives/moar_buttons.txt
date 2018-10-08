@@ -1,3 +1,0 @@
-<button onclick="location.href='../index.html'"> wanna go home? </button>
-<button onclick="location.href='./warrior.html'"> wanna go warrior? </button>
-<button onclick="location.href='./psion.html'"> wanna go psion? </button>
