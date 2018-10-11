@@ -140,6 +140,16 @@ div.centering div.text_container span {
   background-color: #0000003f;
 }
 
+div.completed {
+  padding-top: 4vh;
+  justify-items: stretch;
+  top: 50%;
+  width: 80%;
+  margin: auto;
+}
+
+div.completed h1 { font-size: 4vh; }
+
 span#autoload p {
   font-size: 1.8vh;
   text-align: justify;
@@ -210,6 +220,9 @@ p#concept_desc {
   left: 20vw;
   width: 50%;
 }
+
+a:link { color: #20d179 ; }
+a:visited { color: #1f4572; }
 
 /* ==== Buttons ==== */
 button {
