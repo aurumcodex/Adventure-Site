@@ -4,6 +4,7 @@ var get_bait = false;
 var get_treasure = false;
 
 $(document).ready(function () {
+    // normal pathway script starts here
     $('#autoload').load('../narratives/ranger_nar.html #init', function() {
         $(this).show(500);
     });
@@ -13,6 +14,13 @@ $(document).ready(function () {
     $('.button_menu').on("click", "#charge_in", loadCharge);
     $('.button_menu').on("click", "#hone_sense", loadSense);
     // console.log("do you have bait? :: " + have_bait);
+
+    // boss pathway script starts here
+    $('#bossload').load('../narratives/ranger_nar.html #boss_init');
+    $('.boss_button_menu').load('../narratives/ranger_nar.html #boss_init_menu');
+    $('.boss_button_menu').on("click", "#duck_down", boss_DuckDown);
+    $('.boss_button_menu').on("click", "#try_an_arrow", boss_TryArrow);
+    // console.log("got skunk? :: " + sessionStorage.getItem("skunk_key"));
 });
 
 function clickMe() { console.log("i've been clicked"); }
@@ -161,6 +169,20 @@ function snseRghtReturn() {
     // $('.button_menu').on("click", "#rght_path_bttn", snseTakeRightPath);
 }
 
+// boss functions go below
+function boss_TryArrow() {
+    $('#bossload').load("../narratives/ranger_nar.html #tried_arrow");
+    $('.boss_button_menu').load("../narratives/ranger_nar.html #tried_arrow_menu");
+    $(".boss_button_menu").on("click", "#arrow_fail", toDefeatPage);
+}
+
+function boss_DuckDown() {
+    $('#bossload').load("../narratives/ranger_nar.html #tried_ducking");
+    $('.boss_button_menu').load("../narratives/ranger_nar.html #tried_ducking_menu");
+    $(".boss_button_menu").on("click", "#completed", toVictoryPage);
+}
+
+// loaction funcitons
 function toRngrBossPage() { window.location.href = "./ranger_boss.html"; }
 function toDefeatPage() { window.location.href = "./defeat.html"; }
 function toVictoryPage() { window.location.href = "./victory.html"; }

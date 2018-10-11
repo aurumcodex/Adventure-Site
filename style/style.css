@@ -3,13 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Della+Respira');
 
 /* ==== Overall Document ==== */
-span.class_desc { 
-  display: none;
-  width: 100%;
-}
-/* p#class { height: 3vh; } */
-div#class_desc {height: 10vh;}
-
 :root {
   color: #e8ffda;
   hyphens: auto;
@@ -87,6 +80,35 @@ div.title_div button:hover {
   font: 0.85vw 'Della Respira';
 }
 
+div.title_div a {
+  position: relative;
+  top: 45vh;
+  left: 3vw;
+  color: #52d120;
+}
+
+div.title_div a:hover {
+  position: relative;
+  top: 45vh;
+  left: 3vw;
+  color: #3cbd7c;
+}
+
+div.title_div a:visited {
+  position: relative;
+  top: 45vh;
+  left: 3vw;
+  color: #3f742a98;
+  /* opacity: 0.1; */
+}
+
+span.class_desc { 
+  display: none;
+  width: 100%;
+}
+/* p#class { height: 3vh; } */
+div#class_desc { height: 10vh; }
+
 div.centering {
   padding-top: 8vh;
   justify-items: stretch;
@@ -127,7 +149,20 @@ span#autoload p {
   margin-right: 1vw;
 }
 
+span#bossload p {
+  font-size: 1.8vh;
+  text-align: justify;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
 span#autoload p::first-letter {
+  font-size: 2.7vh;
+  font-style: oblique;
+}
+span#bossload p::first-letter {
   font-size: 2.7vh;
   font-style: oblique;
 }
@@ -170,6 +205,12 @@ img {
   vertical-align: center;
 }
 
+p#concept_desc {
+  position: relative;
+  left: 20vw;
+  width: 50%;
+}
+
 /* ==== Buttons ==== */
 button {
   font: 14px 'Anonymous Pro';
@@ -197,6 +238,7 @@ button:disabled {
 }
 
 span.button_menu button { width: 12em; }
+span.boss_button_menu button { width: 12em; }
 
 /* ==== Navi Bar ==== */ 
 body div.navi {

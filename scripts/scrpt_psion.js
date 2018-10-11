@@ -1,10 +1,17 @@
 /* Author: Nathan Adams */
 
 $(document).ready(function() {
+    // normal pathway script starts here
     $('#autoload').load('../narratives/psion_nar.html #init');
     $('.button_menu').load('../narratives/psion_nar.html #init_menu');
     $('.button_menu').on("click", "#barge_in", noTelepathyInit);
     $('.button_menu').on("click", "#use_telepathy", telepathyInit);
+
+    // boss pathway script starts here
+    $('#bossload').load('../narratives/psion_nar.html #boss_init');
+    $('.boss_button_menu').load('../narratives/psion_nar.html #boss_init_menu');
+    $('.boss_button_menu').on("click", "#bounce_back", boss_BounceOrb);
+    $('.boss_button_menu').on("click", "#dodge_orb", boss_DodgeOrb);
 });
 
 // no telepathy path functions are denoted w/ nt 
@@ -75,6 +82,21 @@ function telepathyPt5() {
     $('#autoload').load('../narratives/psion_nar.html #telepathy_5');
     $('.button_menu').load('../narratives/psion_nar.html #telepathy_menu_5');
     $('.button_menu').on("click", "#telepathy_bttn_5", toPsiBossPage);
+}
+
+// boss functions go here
+function boss_DodgeOrb() {
+    $('#bossload').load('../narratives/psion_nar.html #orb_dodge');
+    $('.boss_button_menu').load('../narratives/psion_nar.html #orb_dodge_menu');
+    $('.boss_button_menu').on("click", "#orb_demise", toDefeatPage);
+    // $('.boss_button_menu').on("click", "#dodge_orb", boss_DodgeOrb);
+}
+
+function boss_BounceOrb() {
+    $('#bossload').load('../narratives/psion_nar.html #orb_bounce');
+    $('.boss_button_menu').load('../narratives/psion_nar.html #bounce_orb_menu');
+    $('.boss_button_menu').on("click", "#success", toVictoryPage);
+    // $('.boss_button_menu').on("click", "#dodge_orb", boss_DodgeOrb);
 }
 
 function toPsiBossPage() { window.location.href = "./psion_boss.html"; }

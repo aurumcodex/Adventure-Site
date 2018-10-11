@@ -13,6 +13,7 @@ $(document).ready(function () {
             $(this).hide(200);
         });
     });
+
     $('.ranger').on("mouseover", function () {
         $('#class').css({ 'color': '#2da707' });
         $('.class_desc').load('../narratives/class_select.txt #ranger', function () {
@@ -25,6 +26,7 @@ $(document).ready(function () {
             $(this).hide(200);
         });
     });
+
     $('.psion').on("mouseover", function () {
         $('#class').css({ 'color': '#00c3ff' });
         $('.class_desc').load('../narratives/class_select.txt #psion', function () {
@@ -37,6 +39,7 @@ $(document).ready(function () {
             $(this).hide(200);
         });
     });
+
     $('.monk').on("mouseover", function () {
         $('#class').css({ 'color': '#d73737' });
         $('.class_desc').load('../narratives/class_select.txt #monk', function () {
@@ -46,6 +49,19 @@ $(document).ready(function () {
     $('.monk').on("mouseout", function () {
         $('#class').css({ 'color': '#e8ffda' });
         $('.class_desc').load('../narratives/class_select.txt #monk', function () {
+            $(this).hide(200);
+        });
+    });
+
+    $('.thief').on("mouseover", function () {
+        $('#class').css({ 'color': '#451245' });
+        $('.class_desc').load('../narratives/class_select.txt #thief', function () {
+            $(this).show(400);
+        });
+    });
+    $('.thief').on("mouseout", function () {
+        $('#class').css({ 'color': '#e8ffda' });
+        $('.class_desc').load('../narratives/class_select.txt #thief', function () {
             $(this).hide(200);
         });
     });

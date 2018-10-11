@@ -3,15 +3,19 @@
 var get_skunk = false;
 
 $(document).ready(function() {
+    // normal pathway script starts here
     // sessionStorage.setItem("skunk_key", get_skunk);
     $('#autoload').load('../narratives/warrior_nar.html #init');
     $('.button_menu').load('../narratives/warrior_nar.html #init_menu');
     $('.button_menu').on("click", "#common_bttn", takeCommon);
     $('.button_menu').on("click", "#decrepit_bttn", takeDecrepit);
 
+    // boss pathway script starts here
     $('#bossload').load('../narratives/warrior_nar.html #boss_init');
     $('.boss_button_menu').load('../narratives/warrior_nar.html #boss_init_menu');
     console.log("got skunk? :: " + sessionStorage.getItem("skunk_key"));
+    $('.boss_button_menu').on("click", "#boss_go_left", boss_DodgeMeetDemise);
+    $('.boss_button_menu').on("click", "#boss_go_right", boss_DodgeSuccess);
 });
 
 // common path functions are denoted w/ cmmn
@@ -97,6 +101,33 @@ function East() {
     $('.button_menu').on("click", "#east_cont", toWarrBossPage);
 }
 
+// all boss functions are prefixed w/ boss_
+function boss_DodgeMeetDemise() {
+    $('#bossload').load('../narratives/warrior_nar.html #dodge_meet_demise');
+    $('.boss_button_menu').load('../narratives/warrior_nar.html #demise_menu');
+    $('.boss_button_menu').on("click", "#demise_cont", toDefeatPage);
+}
+
+function boss_DodgeSuccess() {
+    $('#bossload').load('../narratives/warrior_nar.html #dodge_success');
+    $('.boss_button_menu').load('../narratives/warrior_nar.html #dodge_success_menu');
+    $('.boss_button_menu').on("click", "#cntrattk", boss_GetEaten);
+    $('.boss_button_menu').on("click", "#ddge_again", boss_DodgeAgain);
+}
+
+function boss_GetEaten() {
+    $('#bossload').load('../narratives/warrior_nar.html #counter_failed');
+    $('.boss_button_menu').load('../narratives/warrior_nar.html #demise_menu');
+    $('.boss_button_menu').on("click", "#demise_cont", toDefeatPage);
+}
+
+function boss_DodgeAgain() {
+    $('#bossload').load('../narratives/warrior_nar.html #dodge_success_2');
+    $('.boss_button_menu').load('../narratives/warrior_nar.html #victory');
+    $('.boss_button_menu').on("click", "#finished", toVictoryPage);
+}
+
+// these are location functions
 function toWarrBossPage() { window.location.href = "./warrior_boss.html"; }
 function toDefeatPage() { window.location.href = "./defeat.html"; }
 function toVictoryPage() { window.location.href = "./victory.html"; }
